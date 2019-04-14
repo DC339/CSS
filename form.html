@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单</title>
+</head>
+<body>
+	<h1 align="center">注册信息</h1>
+	<hr color="#336699"/>
+	<form action="action.php" method="post" target="_blank">
+		<!--
+		名：<input type="text" name="username"/>
+		姓：<input type="text" name="username"/>
+		<input type="submit">
+		-->
+		<table width="600px" bgcolor="#f2f2f2" align="center">
+			<tr>
+				<td align="right">姓名：</td>
+				<td align="left"><input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名"/></td>
+			</tr>
+			<tr>
+				<td align="right">密码：</td>
+				<td align="left"><input type="password" name="paw_confirm" size="25" maxlength="6" placeholder="请输入密码"/></td>
+			</tr>
+			<tr>
+				<td align="right">确认密码：</td>
+				<td><input type="password" name="paw" size="25" maxlength="6" placeholder="请再次输入密码"/></td>
+			</tr>
+			<tr>
+				<td align="right">邮箱：</td>
+				<td align="left"><input type="text" name="email" value="@163.com" /></td>
+			</tr>
+			
+			<tr>
+				<td align="right">上传照片：</td>
+				<td align="left"><input type="file" name="file"/></td>
+			</tr>
+			<tr>
+				<td align="right">性别：</td>
+				<td align="left">男<input type="radio" name="sexl" value="man"/>
+					女<input type="radio" name="sexl" value="woman"/>
+					保密<input type="radio" name="sexl" value="bm" checked/>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">爱好：</td>
+				<td align="left">读书<input type="checkbox" name="dx1" value="read" checked/>
+					唱歌<input type="checkbox" name="dx1" value="dance"/>
+					跳舞<input type="checkbox" name="dx1" value="sing"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">喜欢的运动：</td>
+				<td align="left">篮拼球<input type="checkbox" name="dx2" value="1" checked/>
+					羽毛球<input type="checkbox" name="dx2" value="2"/>
+					乒乓球<input type="checkbox" name="dx2" value="3"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">城市：</td>
+				<td align="left">
+					<select name="city">
+						<option value="input" selected>--请选择--</option>
+						<optgroup label="华北">
+							<option value="bj">北京</option>
+							<option value="tj">天津</option>
+							<option value="jb">河北</option>
+						</optgroup>
+						<optgroup label="华东">
+							<option value="sh">上海</option>
+							<option value="fj">福建</option>
+							<option value="xm">厦门</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">简介：</td>
+				<td align="left"><textarea name="jj" rows="6" cols="50" placeholder="请在此处介绍自己..."></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><!--<input type="buttom" name="buttom" value="来点我"/>-->
+					<input type="submit" name="submit" value="提交"/>
+					<input type="reset" name="reset" value="重置"/>
+					<input type="image" name="image_buttom" src="">
+				</td>
+			</tr>
+			
+			<tr>
+				<td><input type="hidden" name="hidden" value="这是一个隐藏域"></td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
