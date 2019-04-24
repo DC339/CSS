@@ -1,0 +1,426 @@
+header{
+	width: 1300px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 30px;
+	/*background-color: #ccc;*/
+}
+
+.logo{
+	width: 136px;
+	height: 48px;
+	float: left;
+}
+
+.logo a{
+	display:block;
+	width: 136px;
+	height:48px;
+	background:url(../img/logo.png) no-repeat;
+	text-indent: -990px;
+	overflow: hidden;
+}
+
+nav {
+	float: left;
+	margin-left: 20px;
+	color: black;
+}
+
+nav li{
+	float:left;
+	/*width: 90px;*/
+	height: 40px;
+	line-height: 40px;
+	margin-left: 25px;
+	padding: 0 10px;
+	font-size: 18px;
+	text-align: center;
+}
+
+nav li:hover{
+	color: red;
+	border-bottom: 2px solid #00a4ff;
+	cursor: pointer;
+}
+
+.search {
+	float: left;
+	width: 380px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 100px;
+}
+
+.search input {
+	width: 331px;
+	height: 40px;
+	padding-left: 10px;
+	border: 1px solid #999;
+	outline: none;
+	/*letter-spacing: 2px;*/
+	float: left;
+
+}
+
+.search button {
+	width: 39px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	background: url(../img/15.png) center no-repeat #999;
+	/*background-color: purple;*/
+	float: left;
+
+}
+
+.personal {
+	height: 40px;
+	line-height: 40px;
+	float: right;
+
+}
+
+.personal dt, .personal dd {
+	float: left;
+	margin: 0 10px;
+}
+
+.personal a {
+	position: relative;
+	padding: 0 5px;
+	margin: 0 10px 0 0;
+	/*display: block;
+	width: 40px;
+	height: 40px;*/
+	text-decoration: none;
+}
+
+.personal a::after {
+	content: "";
+	display: block;
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	border-radius: 50%;
+	position:absolute;
+	right: 0;
+	top: 0;
+}
+
+.personal span img{
+	/*float: right;*/
+	border-radius: 50%;
+	margin-right: 10px;
+	transition: all 0.6s;
+}
+
+.personal span img:hover {
+	transform: rotate(360deg);
+}
+
+/*banner*/
+/*banner background picture*/
+.banner {
+	height: 500px;
+	background-color: #ccc;
+}
+
+.banner .inner {
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+}
+
+.banner .bgp {
+	width: 1200px;
+	height: 500px;
+	/*overflow:hidden;*/
+}
+
+.banner .bgp a {
+	display: block;
+	width: 1200px;
+	height: 500px;
+}
+
+.banner .bgp img{
+	width: 100%;
+	height: 100%;
+}
+
+/*banner circle*/
+.banner .circle {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 160px;
+	height: 20px;
+}
+
+.banner .circle i {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: rgba(255,255,255,.8);
+	margin: 0 5px;
+	border-radius: 5px;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+
+.banner .circle i:hover {
+	width: 20px;
+	/*height: 20px;*/
+	/*border-radius: 70%;*/
+	background-color: #fff;
+}
+
+/*banner left*/
+.banner .left {
+	position: absolute;
+	left: 0;
+	top:0;
+	padding: 10px;
+	width: 180px;
+	height: 500px;
+	background-color: rgba(255,255,255,.3);
+}
+
+.banner .left li {
+	position: relative;
+	padding: 10px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.banner .left li a {
+	color: #fff;
+}
+
+.banner .left li a:hover {
+	cursor: pointer;
+	color:red;
+}
+
+.banner .left span {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+/*banner right*/
+.banner .right {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 228px;
+	height: 310px;
+	background-color: #fff;
+}
+
+.right h1 {
+	font-size: 22px;
+	letter-spacing: 6px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	padding: 5px;
+	background-color: #999;
+	color: black;
+}
+
+.banner .right dt a{
+	font-size: 14px;
+	color: #000;
+}
+
+.banner .right dl {
+	margin: 10px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid gray;
+}
+
+.banner .right dl:nth-child(4) {
+	border: none;
+}
+
+.banner .right dl:hover {
+	border: none;
+	cursor: pointer;
+}
+
+.banner .right dl:hover a {
+	color: #004aff;
+}
+
+.banner .right .all {
+	display: block;
+	width: 208px;
+	height: 50px;
+	line-height: 50px;
+	/*background-color: yellow;*/
+	text-align: center;
+	color: #000;
+	font-size: 20px;
+	margin: 10px 10px 20px 10px;
+	border: 1px solid #999;
+}
+
+.banner .right .all:hover {
+	background-color: #999;
+	color:#fff;
+}
+
+/*class recommend*/
+.recmd {
+	position: relative;
+	margin-top: 10px;
+	/*width: 1200px;*/
+	height: 60px;
+	line-height: 60px;
+	background-color: #fff;
+	box-shadow: 0 1px 12px rgba(0, 0, 0, .3)
+}
+
+.recl { 
+	padding-left: 30px;
+ }
+
+.recl strong {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 16px;
+	color: #1e8ff4;
+	transition:all 2s;
+}
+
+.recl a {
+	/*display: inline-block;*/
+	margin: 0 15px;
+	color: #151515;
+
+}
+
+.recl strong:hover {
+	transform: rotate(360deg);
+}
+
+.recl em {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	color: #1e8ff4;
+	/*background-color: green;*/
+}
+
+/*class list*/
+.clsrec {
+	margin-top: 30px;
+}
+
+.clsrec .left {
+	position: relative;
+	height: 50px;
+}
+
+.clsrec .left a {
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+
+.clsrec .left h2 {
+	font-weight: normal;
+}
+
+.clsrec .list li {
+	float: left;
+	width: 228px;
+	height: 320px;
+	background-color: #fff;
+	margin: 0 15px 15px 0;
+	overflow: hidden;
+	transition: all .6s;
+
+}
+
+.clsrec .list li:nth-child(5n) {
+	margin-right: 0;
+}
+
+.clsrec .list li:hover {
+	box-shadow: 5px 8px 15px rgba(0, 0, 0, .3);
+    transform: translateY(-10px);
+}
+
+.clsrec .list li img{
+	width: 110%;
+	/*height: 80%;*/
+	transition: all .6s;
+}
+
+.clsrec .list img:hover {
+	transform: translateX(-10px);
+}
+
+/*课程标题*/
+.clsrec li .title {
+	width: 100px;
+	margin: 6px auto;
+	font-size: 16px;
+	color: #151515;
+}
+
+.clsrec li p {
+	width: 150px;
+	margin: 0 auto;
+	font-size: 10px;
+}
+
+.clsrec li span {
+	color: orange;
+    font-size: 14px;
+}
+/*footer*/
+footer {
+    height: 420px;
+    margin-top: 30px;
+    /*position: relative;*/
+}
+
+footer .left {
+	float: left;
+    padding-left: 20px;
+}
+
+footer .left p {
+	margin-top: 15px;
+	font-size: 10px;
+}
+
+footer .left a {
+	display: block;
+	margin-top: 15px;
+	width: 185px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	color: #1e8ff4;
+	border: 1px solid #1e8ff4;
+}
+
+footer .right {
+	float: right;
+}
+
+
+footer .right ul{
+	float: left;
+	margin-left: 150px;
+	/*padding-top: 100px;*/
+	height: 40px;
+	line-height: 40px;
+}
